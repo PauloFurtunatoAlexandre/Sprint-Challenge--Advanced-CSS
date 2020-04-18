@@ -246,3 +246,17 @@ footer {
 .container.home .intro img {
   border-radius: 5px;
 }
+section.walk .walk-text .btn {
+  border-radius: 6px;
+  background-color: #23293B;
+  color: #F6F7F8;
+  padding: 8px 20px;
+  width: 30%;
+  text-align: center;
+  font-size: 2rem;
+  text-decoration: none;
+}
+section.walk .walk-text .btn:hover {
+  color: #81848E;
+  background-color: #F6F7F8;
+}
