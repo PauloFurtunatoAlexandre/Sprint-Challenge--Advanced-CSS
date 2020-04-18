@@ -78,26 +78,88 @@
   .intro {
     img {
       .border-radius(10px);
+      width: 100%;
+
+      @media @phone {
+        width: 100%;
+      }
     }
+    
   }
 }
 
-section.walk {
-  
-  .walk-text {
-    
-    .btn {
-      .button-signup(@ebony-clay, @porcelain, 8px, 20px, 30%);
-      text-align: center;
-      font-size: 2rem;
-      text-decoration: none;
+.home {
+  .walk {
 
-      &:hover {
-        color: @waterloo;
-        background-color: @porcelain;
+    @media @phone {
+      align-items: center;
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .walk-img {
+      @media @phone {
+        order: 0;
+        width: 100% !important;
+        margin-left: 0 !important;
+
+        img {
+          @media @phone {
+            width: 100%;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+    
+    .walk-text {
+      @media @phone {
+        order: 1;
+        width: 100%;
+      }
+      
+      .btn {
+        .button-signup(@ebony-clay, @porcelain, 8px, 20px, 30%);
+        text-align: center;
+        font-size: 2rem;
+        text-decoration: none;
+
+        @media @phone {
+          display: block;
+          padding: 20px 40px;
+          width: 100%;
+        }
+  
+        &:hover {
+          color: @waterloo;
+          background-color: @porcelain;
+        }
+      }
+    }
+  }  
+}
+
+.container.home {
+
+  .space-images {
+    
+    img.blast {
+      @media @phone {
+        width: 90%;
+        margin: 20px;
+      }
+    }
+
+    img.sky {
+      @media @phone {
+        display: none;
+      }
+    }
+
+    img.launch {
+      @media @phone {
+        display: none;
       }
     }
   }
-
-
 }

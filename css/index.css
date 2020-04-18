@@ -160,13 +160,17 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    width: 100vw;
+  }
+}
 .top-navbar {
   background: #F6F6F6;
   padding: 20px;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-content: flex-end;
 }
 .top-navbar .navbar {
   align-self: center;
@@ -177,6 +181,12 @@ p {
   font-size: 1.8rem;
   text-decoration: none;
   color: #23293B;
+}
+@media (max-width: 500px) {
+  .top-navbar .navbar a {
+    padding: 10px;
+    font-size: 1.4rem;
+  }
 }
 .top-navbar h1 {
   font-size: 4rem;
@@ -245,8 +255,40 @@ footer {
 }
 .container.home .intro img {
   border-radius: 5px;
+  width: 100%;
 }
-section.walk .walk-text .btn {
+@media (max-width: 500px) {
+  .container.home .intro img {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .home .walk {
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    order: 0;
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+}
+@media (max-width: 500px) and (max-width: 500px) {
+  .home .walk .walk-img img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    order: 1;
+    width: 100%;
+  }
+}
+.home .walk .walk-text .btn {
   border-radius: 6px;
   background-color: #23293B;
   color: #F6F7F8;
@@ -256,7 +298,30 @@ section.walk .walk-text .btn {
   font-size: 2rem;
   text-decoration: none;
 }
-section.walk .walk-text .btn:hover {
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    display: block;
+    padding: 20px 40px;
+    width: 100%;
+  }
+}
+.home .walk .walk-text .btn:hover {
   color: #81848E;
   background-color: #F6F7F8;
+}
+@media (max-width: 500px) {
+  .container.home .space-images img.blast {
+    width: 90%;
+    margin: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .container.home .space-images img.sky {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .container.home .space-images img.launch {
+    display: none;
+  }
 }
