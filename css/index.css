@@ -166,6 +166,9 @@ p {
   }
 }
 .top-navbar {
+  opacity: 0.9;
+  position: fixed;
+  width: 100%;
   background: #F6F6F6;
   padding: 20px;
   display: flex;
@@ -256,6 +259,7 @@ footer {
 .container.home .intro img {
   border-radius: 5px;
   width: 100%;
+  margin-top: 118px;
 }
 @media (max-width: 500px) {
   .container.home .intro img {
