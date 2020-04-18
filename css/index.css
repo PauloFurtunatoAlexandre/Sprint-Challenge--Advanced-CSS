@@ -160,6 +160,28 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.top-navbar {
+  background: #F6F6F6;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: flex-end;
+}
+.top-navbar .navbar {
+  align-self: center;
+  margin-top: 20px;
+}
+.top-navbar .navbar a {
+  padding: 20px;
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #23293B;
+}
+.top-navbar h1 {
+  font-size: 4rem;
+  align-self: center;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -220,4 +242,7 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.container.home .intro img {
+  border-radius: 5px;
 }
