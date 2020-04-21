@@ -267,6 +267,18 @@ footer {
   }
 }
 @media (max-width: 500px) {
+  .container.home .space-images img.blast {
+    width: 90%;
+    margin: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .container.home .space-images img.sky,
+  .container.home .space-images img.launch {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
   .home .walk {
     align-items: center;
     flex-direction: column;
@@ -312,20 +324,4 @@ footer {
 .home .walk .walk-text .btn:hover {
   color: #81848E;
   background-color: #F6F7F8;
-}
-@media (max-width: 500px) {
-  .container.home .space-images img.blast {
-    width: 90%;
-    margin: 20px;
-  }
-}
-@media (max-width: 500px) {
-  .container.home .space-images img.sky {
-    display: none;
-  }
-}
-@media (max-width: 500px) {
-  .container.home .space-images img.launch {
-    display: none;
-  }
 }

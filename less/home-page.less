@@ -85,7 +85,21 @@
         width: 100%;
       }
     }
+  }
+  .space-images {
     
+    img.blast {
+      @media @phone {
+        width: 90%;
+        margin: 20px;
+      }
+    }
+
+    img.sky, img.launch {
+      @media @phone {
+        display: none;
+      }
+    }
   }
 }
 
@@ -138,29 +152,4 @@
       }
     }
   }  
-}
-
-.container.home {
-
-  .space-images {
-    
-    img.blast {
-      @media @phone {
-        width: 90%;
-        margin: 20px;
-      }
-    }
-
-    img.sky {
-      @media @phone {
-        display: none;
-      }
-    }
-
-    img.launch {
-      @media @phone {
-        display: none;
-      }
-    }
-  }
 }
